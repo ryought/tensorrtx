@@ -72,7 +72,7 @@ namespace nvinfer1
 
             virtual size_t getWorkspaceSize(int maxBatchSize) const TRT_NOEXCEPT override { return 0;}
 
-            virtual int enqueue(int batchSize, const void*const * inputs, void** outputs, void* workspace, cudaStream_t stream) TRT_NOEXCEPT override;
+            virtual int enqueue(int batchSize, const void*const * inputs, void*TRT_CONST_ENQUEUE* outputs, void* workspace, cudaStream_t stream) TRT_NOEXCEPT override;
 
             virtual size_t getSerializationSize() const TRT_NOEXCEPT override;
 
