@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "NvInfer.h"
+#include "macros.h"
 
 namespace nvinfer1
 {
